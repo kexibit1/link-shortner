@@ -25,8 +25,7 @@ router.post("/register", async (req, res) => {
       console.log("Ошибка кандидат найден");
       return res.status(400).json({ message: "User already exist" });
     }
-
-    const hashedPassword = await bcrypt.hash(password, 12);
+    const hashedPassword = await bcrypt.hash(password, 10);
 
     const user = new User({
       email,
