@@ -13,6 +13,7 @@ app.use(
 );
 app.use(express.json());
 app.use("/api/auth", require("./routes/auth.routes"));
+app.use("/api/link", require("./routes/link.routes"));
 
 async function start() {
   try {

@@ -11,7 +11,8 @@
     "express": "^4.17.1",
     "joi": "^17.4.0",
     "jsonwebtoken": "^8.5.1",
-    "mongoose": "^5.12.9"
+    "mongoose": "^5.12.9",
+    "shortid": "^2.2.16"
   },
   "scripts": {
     "start": "node app.js",
